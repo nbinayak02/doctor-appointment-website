@@ -1,0 +1,26 @@
+nav{
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+    background-color: #fff;
+    box-shadow: 0px -4px 10px 10px #ededed;
+}
+
+nav .logo{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333333;
+    padding-left: 3rem;
+}
+
+nav .menus{
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    
+}
