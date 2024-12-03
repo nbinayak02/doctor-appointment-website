@@ -1,0 +1,47 @@
+
+.doctor-card .doc {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #c9d8ff;
+    border-radius: 10px;
+    margin-top: 2rem;
+    transition: 0.2s;
+}
+
+.doctor-card .doc .doc-img{
+    width: 100%;
+    height: 70%;
+    background-color: #c9d8ff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.doctor-card .doc .doc-info{
+    width: 100%;
+    height: 30%;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.doctor-card .doc .doc-img img{
+    height: 100%;
+}
+
+.doctor-card .doc .doc-info .doc-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.doctor-card .doc .doc-info .doc-qual, .doctor-card .doc .doc-info .doc-spec{
+    font-weight: 500;
+}
+
+.doctor-card .doc:hover{
+    transform: scale(1.05);
+}
