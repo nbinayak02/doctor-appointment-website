@@ -25,6 +25,113 @@ nav .menus {
 
 }
 
+
+.under_hover{
+
+    border: none;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.under_hover:hover{
+
+    color: #5f6fff;
+
+
+
+}
+
+
+.under_hover::after{
+
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color:#5f6fff;
+    display: block;
+    transition: all 300ms linear;
+    transform: scaleX(0);
+    margin: 4px 0 0;
+}
+
+.under_hover:hover:after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color:#5f6fff;
+    display: block;
+    transition: all 300ms linear;
+
+transform: scaleX(1);
+margin: 4px 0 0;
+
+
+
+}
+
+
+
+#login_btn{
+    width: 8rem;
+    background: #5f6fff;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    /* background-color: #fff; */
+    cursor: pointer;
+    transition: 0.2s;
+    color: #fff;
+}
+
+@media(max-width:766px){
+    #login_btn{
+        width: 6rem;
+    }
+
+}
+
+@media (max-width: 637px) {
+    #login_btn {
+        width: 5rem;
+    }
+}
+
+
+#login_signup{
+    position: absolute;
+    right: 5px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#signup_btn{
+
+    border: 2px solid #b8e1d0;
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 8rem;
+}
+
+@media(max-width:766px){
+    #signup_btn{
+        width: 6rem;
+    }
+
+}
+
+@media (max-width: 637px) {
+    #signup_btn{
+        width: 5rem;
+    }
+}
+
+
 nav .menus .search-bar,
 .menu-dropdown .menus .search-bar {
     background-color: #706e6e23;
@@ -46,6 +153,9 @@ nav .menus .search-bar i,
     float: right;
     font-size: 1.4rem;
     font-weight: 600;
+    position: absolute;
+    right: 6px;
+    top: 27%;
 }
 
 nav .menus .profile {
@@ -64,6 +174,33 @@ nav .menus #menu-icon {
 
 nav .menus .menu-item {
     display: block;
+    margin-right: 15rem;
+    position: relative;
+}
+
+@media(max-width:1032px){
+
+    nav .menus .menu-item {
+        display: block;
+        margin-right: 16rem;
+    }
+}
+
+@media(max-width:943px){
+    nav .menus .menu-item {
+        display: block;
+        margin-right: 16rem;
+        width: 5rem;
+    }
+
+}
+
+@media (max-width: 763px) {
+    nav .menus .menu-item {
+        display: block;
+        margin-right: 12rem;
+        width: 5rem;
+    }
 }
 
 .menu-dropdown {
@@ -89,6 +226,13 @@ nav .menus .menu-item {
 @media (max-width:1160px) {
     nav .logo {
         scale: 1.2;
+    }
+}
+
+@media(max-width:1051px){
+    nav .logo {
+        position: relative;
+    right: 23px;
     }
 }
 
