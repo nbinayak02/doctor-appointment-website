@@ -27,8 +27,6 @@ body {
 
 }
 
-
-
 .left {
     display: flex;
     flex-direction: column;
@@ -340,35 +338,14 @@ footer {
 
 @media (max-width:600px) {
     .doctor-card .doc-list {
-        /* grid-template-columns: repeat(1, 1fr); */
-      
-    }
-    }
-
-    @media (max-width: 587px) {
-        .doctor-card .doc-list {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-
-    @media (max-width: 586px) {
-        .doctor-card .doc-list {
-            /* grid-template-columns: repeat(1, 1fr); */
-            grid-template-columns: repeat(1, 0fr);
-            align-items: center;
-            justify-content: center;
-        }
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .review-list {
-        width: 498px;
-    
+        width: 300px;
     }
 
 }
-
-
 
 @media (max-width:440px) {
     .last-cta .heading {
@@ -396,69 +373,4 @@ footer {
         width: 90%;
     }
 
-}
-
-@media (max-width:935px){
-
-    .review-list {
-        width: 769px;
-        border: 2px solid #c9d8ff;
-        border-radius: 10px;
-        display: flex ;
-        justify-content: space-evenly;
-    }
-}
-@media (max-width: 846px) {
-    .review-list {
-        width: 706px;
-        border: 2px solid #c9d8ff;
-        border-radius: 10px;
-        display: flex
-;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 774px) {
-    .review-list {
-        width: 645px;
-        border: 2px solid #c9d8ff;
-        border-radius: 10px;
-        display: flex
-;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 720px) {
-    .review-list {
-        width: 560px;
-        border: 2px solid #c9d8ff;
-        border-radius: 10px;
-        display: flex
-;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 623px) {
-    .review-list {
-        width: 460px;
-        border: 2px solid #c9d8ff;
-        border-radius: 10px;
-        display: flex
-;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 594px) {
-    .review-list {
-        width: 429px;
-        border: 2px solid #c9d8ff;
-        border-radius: 10px;
-        display: flex
-;
-        justify-content: space-evenly;
-    }
 }
