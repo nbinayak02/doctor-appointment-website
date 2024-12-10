@@ -226,12 +226,16 @@ button:hover {
 footer {
     width: 100%;
     margin-top: 4rem;
-    height: 20vh;
+    height: 40vh;
     background-color: #5f6fff;
     color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:flex-end;
     align-items: center;
+    gap: 3rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
 }
 
 @media (max-width:1400px) {
