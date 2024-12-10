@@ -327,7 +327,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .features .other{
+    .features .other {
         display: none;
     }
 }
@@ -337,8 +337,23 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .review-list{
+    .review-list {
         width: 300px;
+    }
+
+}
+
+@media (max-width:440px) {
+    .last-cta .heading {
+        padding: 1rem;
+    }
+
+    .features .feat .subheading{
+        width:15rem;
+    }
+
+    .features .feat .list .spec{
+        padding: 0.5rem;
     }
 
 }
