@@ -3,6 +3,7 @@
 
 <head>
   <title>Dr. Appoint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Styles/nav-bar.css" />
   <link rel="stylesheet" href="./Styles/style.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -12,15 +13,35 @@
 <body>
   <!-- navigation bar -->
   <nav>
-    <div class="logo">Dr Appoint</div>
+    <img class="logo" src="./Assets/Images/DA_Logo_Large.png" alt="Logo">
     <div class="menus">
-      <span>Home</span>
-      <span>Doctors</span>
-      <span>About</span>
-      <span>Contact</span>
+      <span class="menu-item">Home</span>
+      <span class="menu-item">Doctors</span>
+      <span class="menu-item">About</span>
+      <span class="menu-item">Contact</span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+      <span class="profile">Sign up</span>
+      <span id="menu-icon"><i class='bx bx-menu'></i></span>
     </div>
   </nav>
   <!-- end of navigation bar -->
+
+  <div class="menu-dropdown">
+    <div class="menus">
+      <span class="menu-item">Home</span>
+      <span class="menu-item">Doctors</span>
+      <span class="menu-item">About</span>
+      <span class="menu-item">Contact</span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+    </div>
+
+  </div>
 
   <!-- hero section  -->
   <div class="hero">
@@ -62,20 +83,20 @@
         <div class="spec">Psychiatry</div>
       </div>
     </div>
-    <div class="feat">
+    <div class="feat other">
       <img src="./Assets/Images/booking.svg">
     </div>
-    <div class="feat">
+    <div class="feat other">
       <div class="heading">Instant Booking</div>
       <div class="subheading">Schedule appointments with ease – choose from available time slots and book instantly.
       </div>
     </div>
-    <div class="feat">
+    <div class="feat other">
       <div class="heading">Secure Patient Portal</div>
       <div class="subheading">Access your health records, prescriptions, and appointment history in a secure and
         confidential portal.</div>
     </div>
-    <div class="feat">
+    <div class="feat other">
       <img src="./Assets/Images/secure.svg" alt="">
     </div>
 
@@ -342,7 +363,7 @@
   </footer>
   <!-- end of footer -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+  <script src="./Scripts/showMenu.js"></script>
 </body>
 
 </html>

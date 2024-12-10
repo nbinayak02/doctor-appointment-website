@@ -28,7 +28,6 @@ body {
 }
 
 .left {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,12 +101,12 @@ button:hover {
     row-gap: 4rem;
 }
 
-.heading{
+.heading {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.subheading{
+.subheading {
     font-size: 1.2rem;
     margin-top: 0.5rem;
     width: 40rem;
@@ -131,7 +130,7 @@ button:hover {
 }
 
 .features .feat .list .spec:hover {
-    background-color: #50e3c2;
+    background-color: #c9d8ff;
 }
 
 .features .feat .list .obs {
@@ -143,7 +142,7 @@ button:hover {
     height: 300px;
 }
 
-.stats{
+.stats {
     margin-top: 2rem;
     height: 20vh;
     background-color: #5f6fff;
@@ -152,23 +151,23 @@ button:hover {
     align-items: center;
 }
 
-.stats div{
+.stats div {
     font-size: 2rem;
     font-weight: 500;
     color: #fff;
 }
 
-.doctor-card{
+.doctor-card {
     margin-left: 3rem;
     margin-top: 4rem;
 }
 
-.doctor-card .doc-list{
+.doctor-card .doc-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.last-cta{
+.last-cta {
     margin-top: 4rem;
     height: 30vh;
     background-color: #5f6fff;
@@ -176,21 +175,22 @@ button:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color:#fff;
+    color: #fff;
 }
 
-.reviews{
+.reviews {
     margin-top: 4rem;
     margin-left: 3rem;
 }
 
-.rev{
+.rev {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
 }
-.review-list{
+
+.review-list {
     width: 400px;
     border: 2px solid #c9d8ff;
     border-radius: 10px;
@@ -198,7 +198,7 @@ button:hover {
     justify-content: space-evenly;
 }
 
-.rev-img{
+.rev-img {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -206,7 +206,7 @@ button:hover {
     align-items: center;
 }
 
-.rev-msg{
+.rev-msg {
     width: 70%;
     padding: 1rem;
     font-weight: 500;
@@ -214,15 +214,16 @@ button:hover {
     line-height: 25px;
 }
 
-.rev-img img{
+.rev-img img {
     width: 100px;
     height: 100px;
 }
-.rev-img .rev-name{
+
+.rev-img .rev-name {
     font-weight: 600;
 }
 
-footer{
+footer {
     width: 100%;
     margin-top: 4rem;
     height: 20vh;
@@ -231,4 +232,141 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:1400px) {
+
+    /* minimize doctor list columns  */
+    .doctor-card .doc-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width:1350px) {
+
+    /* minimize features section  */
+    .features .feat .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rev {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subheading {
+        width: 30rem;
+    }
+}
+
+@media (max-width:1140px) {
+
+    .doctor-card .doc-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width:1100px) {
+
+    /* make responsive hero section  */
+    .left .heading,
+    .left .sub-heading {
+        width: 60%;
+
+    }
+
+    .subheading {
+        width: 20rem;
+    }
+}
+
+@media (max-width:935px) {
+
+    .left .heading,
+    .left .sub-heading {
+        width: 80%;
+
+    }
+
+    .rev {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card .doc-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:760px) {
+
+    .left .heading,
+    .left .sub-heading {
+        width: 100%;
+
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats div {
+        font-size: 1.5rem;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        justify-content: center;
+
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .features .other {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .doctor-card .doc-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .review-list {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:440px) {
+    .last-cta .heading {
+        padding: 1rem;
+    }
+
+    .features .feat .subheading{
+        width:15rem;
+    }
+
+    .features .feat .list .spec{
+        padding: 0.5rem;
+    }
+
+    .review-list{
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .rev-img{
+        width: 100%;
+    }
+
+    .rev-msg{
+        width: 90%;
+    }
+
 }

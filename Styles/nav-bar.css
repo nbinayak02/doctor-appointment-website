@@ -1,26 +1,128 @@
-nav{
+nav {
     height: 4rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10rem;
+    /* gap: 10rem; */
     background-color: #fff;
     box-shadow: 0px -4px 10px 10px #ededed;
 }
 
-nav .logo{
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #333333;
-    padding-left: 3rem;
+nav .logo {
+    width: 10%;
+    scale: 1;
+    margin-left: 3rem;
 }
 
-nav .menus{
-    width: 40rem;
+nav .menus {
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     font-size: 1rem;
     font-weight: 600;
     color: #333333;
-    
+
+}
+
+nav .menus .search-bar,
+.menu-dropdown .menus .search-bar {
+    background-color: #706e6e23;
+    padding: 0.6rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+nav .menus .search-bar input[type="text"],
+.menu-dropdown .menus .search-bar input[type="text"] {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+nav .menus .search-bar i,
+.menu-dropdown .menus .search-bar i {
+    float: right;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+nav .menus .profile {
+    padding: 0.6rem;
+    width: 5rem;
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+    background-color: #5f6fff;
+}
+
+nav .menus #menu-icon {
+    font-size: 2rem;
+    display: none;
+}
+
+nav .menus .menu-item {
+    display: block;
+}
+
+.menu-dropdown {
+    display: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    border-top: 1px dashed black;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+}
+
+.menu-dropdown .menus {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width:1160px) {
+    nav .logo {
+        scale: 1.2;
+    }
+}
+
+@media (max-width:760px) {
+    nav .logo {
+        scale: 1.4;
+    }
+
+    /* make small search bar  */
+    nav .menus .search-bar input {
+        display: none;
+    }
+
+    nav .menus .search-bar {
+        width: fit-content;
+    }
+
+    nav .menus .search-bar i {
+        clear: right;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+
+    nav .logo {
+        scale: 3;
+    }
+
+    nav .menus #menu-icon {
+        display: block;
+    }
+
+    nav .menus .menu-item {
+        display: none;
+    }
 }
