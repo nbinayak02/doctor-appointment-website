@@ -331,7 +331,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .features .other {
+    .features .other{
         display: none;
     }
 }
@@ -340,37 +340,4 @@ footer {
     .doctor-card .doc-list {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .review-list {
-        width: 300px;
-    }
-
-}
-
-@media (max-width:440px) {
-    .last-cta .heading {
-        padding: 1rem;
-    }
-
-    .features .feat .subheading{
-        width:15rem;
-    }
-
-    .features .feat .list .spec{
-        padding: 0.5rem;
-    }
-
-    .review-list{
-        flex-direction: column;
-        width: 200px;
-    }
-
-    .rev-img{
-        width: 100%;
-    }
-
-    .rev-msg{
-        width: 90%;
-    }
-
 }
