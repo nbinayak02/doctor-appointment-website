@@ -123,3 +123,14 @@ footer {
     font-weight: 600;
     padding-bottom: 2rem;
 }
+
+@media (max-width:430px){
+    .form-container{
+        width: 300px;
+    }
+}
+@media (max-width:380px){
+    .form-container{
+        width:250px;
+    }
+}
