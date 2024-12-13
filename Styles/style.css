@@ -70,7 +70,10 @@ button {
     cursor: pointer;
     transition: 0.2s;
 }
-
+button a{
+    text-decoration: none;
+    color: #000;
+}
 button:hover {
     transform: scale(1.05);
 }

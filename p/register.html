@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-DrAppoint</title>
+    <link rel="stylesheet" href="../Styles/nav-bar.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/login.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <img class="logo" src="../Assets/Images/DA_Logo_Large.png" alt="Logo">
+        <div class="menus">
+            <span class="menu-item under_hover"><a href="../index.html">Home</a></span>
+            <span class="menu-item under_hover"><a href="">Doctors</a></span>
+            <span class="menu-item under_hover"><a href="">About</a></span>
+            <span class="menu-item under_hover"><a href="">Contact</a></span>
+            <span class="menu-item search-bar">
+                <input type="text" placeholder="Search">
+                <i class='bx bx-search'></i>
+            </span>
+            <!-- <span class="profile">Sign up</span> -->
+            <span id="menu-icon"><i class='bx bx-menu'></i></span>
+        </div>
+    </nav>
+
+    <div class="menu-dropdown">
+        <div class="menus">
+            <span class="menu-item under_hover">Home</span>
+            <span class="menu-item under_hover">Doctors</span>
+            <span class="menu-item under_hover">About</span>
+            <span class="menu-item under_hover">Contact</span>
+            <span class="menu-item search-bar">
+                <input type="text" placeholder="Search">
+                <i class='bx bx-search'></i>
+            </span>
+        </div>
+
+    </div>
+    <!-- end of navigation bar -->
+
+    <div class="login" style="height: 110vh;">
+        <div class="form-container">
+            <h2>Sign up</h2>
+            <p>Already have an account? <a href="./login.html">Login</a></p>
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="example@domain.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phn">Phone Number</label>
+                    <input type="text" id="phn" name="phn" placeholder="9800000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+
+                <div class="form-group">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" id="cpass">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="remp" name="remp">
+                    <label for="remp">Remember Password</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" name="submit" value="Sign up">
+                </div>
+
+                <div class="form-group lw">
+                    <p>Signup with</p>
+                </div>
+
+                <div class="form-group">
+                    <button>Google</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="footer-container">
+            <div class="info">
+                <div class="footer-image">
+                    <img src="../Assets/Images/DA_Logo_Large_White.png">
+                </div>
+                <div class="footer-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod vero
+                        reiciendis doloribus, architecto accusamus rerum hic tempora! Voluptatibus, minus iure autem
+                        libero tenetur facere inventore assumenda accusantium eaque, maxime similique!</p>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>Home</li>
+                    <li>Doctors</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 dr-appoint.com - All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../Scripts/showMenu.js"></script>
+
+</body>
+
+</html>
