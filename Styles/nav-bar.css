@@ -66,6 +66,12 @@ nav .menus .profile {
     background-color: #5f6fff;
 }
 
+
+    .profile:hover {
+        transform: scale(1.05);
+    }
+
+
 nav .menus #menu-icon {
     font-size: 2rem;
     display: none;
