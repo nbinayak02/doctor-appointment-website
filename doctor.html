@@ -4,45 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctors</title>
-    <link rel="stylesheet" href="./Styles/nav-bar.css" />
-    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/nav-bar.css"/>
+    <link rel="stylesheet" href="./Styles/style.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
     <link rel="stylesheet" href="./Styles/doctor-card.css"/>
+
+    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
+
 
 
     <link rel="stylesheet" href="./Styles/doctors.css"/>
 
 
 
+    <!-- Bootstrap font awesome three dot -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 </head>
 <body>
 
-    <nav>
-        <img class="logo" src="./Assets/Images/DA_Logo_Large.png" alt="Logo">
-        <div class="menus">
-          <a class="under_hover" href="index.html"><span>Home</span></a>
-          <a class="under_hover" href="doctor.html"><span>Doctors</span></a>
-          <a class="under_hover" href=""><span>About</span></a>
-          <a class="under_hover" href=""><span>Contact</span></a>
-          <span class="menu-item search-bar">
-            <input type="text" placeholder="Search">
-            <i class='bx bx-search'></i>
-          </span>
-    
-          <div id="login_signup"><span> <a href="/"><button id="login_btn">Login</button></a></span>
-            <span><a href="signup.html"><button id="signup_btn">SignUp</button></a></span>
-          </div>
-    
-    
-          <!-- <span class="profile">Sign up</span>
-          <span id="menu-icon"><i class='bx bx-menu'></i></span> -->
-        </div>
-      </nav>
-      <!-- end of navigation bar -->
+  <nav>
+    <img class="logo" src="./Assets/Images/DA_Logo_Large.png" alt="Logo">
+    <div class="menus">
+      <span class="menu-item under_hover"><a href="./index.html">Home</a></span>
+      <span class="menu-item under_hover"><a href="">Doctors</a></span>
+      <span class="menu-item under_hover"><a href="./p/about.html">About</a></span>
+      <span class="menu-item under_hover"><a href="">Contact</a></span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+      <span class="profile"><a href="./p/login.html">Login</a></span>
+      <span id="menu-icon"><i class='bx bx-menu'></i></span>
+    </div>
+  </nav>
+  <!-- end of navigation bar -->
     
 <div id="ban">Browse the doctor through specialist</div>
 
 <div class="container">
+
+  <!-- drop down menu -->
+  <span id="menu-icon"><i class='bx bx-menu'></i></span>
+
+
+
+  <div class="menu-dropdown">
+    <div class="menus">
+      <span class="menu-item under_hover">General Physician</span>
+      <span class="menu-item under_hover">Cardiologist</span>
+      <span class="menu-item under_hover">Neurologist</span>
+      <span class="menu-item under_hover">Dermatologist</span>
+      <span class="menu-item under_hover">Gynecologist</span>
+      <span class="menu-item under_hover">Gastroenterologist</span>
+      <span class="menu-item under_hover">Psychiatrist</span>
+  
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+    </div>
+
+  </div>
+
+
+
 
     <div id="left_banner">
 
@@ -161,7 +189,93 @@
 
     </div>
     
-</div>
+  </div>
+
+
+  <!-- footer  -->
+  <footer>
+    <div class="footer-container">
+      <div class="info">
+        <div class="footer-image">
+          <img src="./Assets/Images/DA_Logo_Large_White.png">
+        </div>
+        <div class="footer-desc">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod vero reiciendis doloribus, architecto accusamus rerum hic tempora! Voluptatibus, minus iure autem libero tenetur facere inventore assumenda accusantium eaque, maxime similique!</p>
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li>Home</li>
+          <li>Doctors</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Privacy Policy</li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 dr-appoint.com - All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  
+  <script src="/Scripts/showMenu.js"></script>
+
+  
+<script>
+
+
+  
+// Select elements
+const menuBtn = document.querySelector(".container #menu-icon");
+const dropdown = document.querySelector(".container .menu-dropdown");
+const menuIcon = document.querySelector(".container #menu-icon .bx");
+let isMenuClicked = false;
+
+
+
+// Toggle the dropdown
+function showDropdown() {
+
+
+    if (!isMenuClicked) {
+        dropdown.style.display = "block";
+        document.getElementById("right_banner").style.marginLeft="13rem";
+        isMenuClicked = true;
+        menuIcon.classList.remove("bx-menu");
+        menuIcon.classList.add("bx-x");
+    } else {
+        dropdown.style.display = "none";
+        document.getElementById("right_banner").style.marginLeft="";
+        isMenuClicked = false;
+        menuIcon.classList.remove("bx-x");
+        menuIcon.classList.add("bx-menu");
+    }
+}
+
+
+
+function hideDropdownOnResize() {
+    if (window.innerWidth > 688) {
+        dropdown.style.display = "none";
+        document.getElementById("right_banner").style.marginLeft="";
+
+        menuIcon.classList.remove("bx-x");
+        menuIcon.classList.add("bx-menu");
+    }
+}
+
+// Attach event listener
+menuBtn.addEventListener('click', showDropdown);
+    window.addEventListener("resize", hideDropdownOnResize);
+</script>
+
+<!-- <script src="/Scripts/doctorMenu.js"></script> -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
 </body>
 </html>
