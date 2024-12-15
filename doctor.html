@@ -29,7 +29,7 @@
     <img class="logo" src="./Assets/Images/DA_Logo_Large.png" alt="Logo">
     <div class="menus">
       <span class="menu-item under_hover"><a href="./index.html">Home</a></span>
-      <span class="menu-item under_hover"><a href="">Doctors</a></span>
+      <span class="menu-item under_hover"><a href="./doctor.html">Doctors</a></span>
       <span class="menu-item under_hover"><a href="./p/about.html">About</a></span>
       <span class="menu-item under_hover"><a href="">Contact</a></span>
       <span class="menu-item search-bar">
@@ -41,6 +41,21 @@
     </div>
   </nav>
   <!-- end of navigation bar -->
+
+  <div class="menu-dropdown">
+    <div class="menus">
+      <span class="menu-item under_hover">Home</span>
+      <span class="menu-item under_hover">Doctors</span>
+      <span class="menu-item under_hover">About</span>
+      <span class="menu-item under_hover">Contact</span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+    </div>
+
+  </div>
+
     
 <div id="ban">Browse the doctor through specialist</div>
 
@@ -51,7 +66,7 @@
 
 
 
-  <div class="menu-dropdown">
+  <div id="doc_menu_dropdown" class="menu-dropdown">
     <div class="menus">
       <span class="menu-item under_hover">General Physician</span>
       <span class="menu-item under_hover">Cardiologist</span>
@@ -61,9 +76,9 @@
       <span class="menu-item under_hover">Gastroenterologist</span>
       <span class="menu-item under_hover">Psychiatrist</span>
   
-      <span class="menu-item search-bar">
+      <span id="drop_search" class="menu-item search-bar">
         <input type="text" placeholder="Search">
-        <i class='bx bx-search'></i>
+        <i id="sch_bx" class='bx bx-search'></i>
       </span>
     </div>
 
@@ -222,60 +237,58 @@
   <!-- end of footer -->
 
   
-  <script src="/Scripts/showMenu.js"></script>
-
   
-<script>
-
-
   
-// Select elements
-const menuBtn = document.querySelector(".container #menu-icon");
-const dropdown = document.querySelector(".container .menu-dropdown");
-const menuIcon = document.querySelector(".container #menu-icon .bx");
-let isMenuClicked = false;
-
-
-
-// Toggle the dropdown
-function showDropdown() {
-
-
-    if (!isMenuClicked) {
+  <!-- <script>
+    
+    // Select elements
+    const menuBtn = document.querySelector(".container #menu-icon");
+    const dropdown = document.querySelector(".container .menu-dropdown");
+    const menuIcon = document.querySelector(".container #menu-icon .bx");
+    let isMenuClicked = false;
+    
+    
+    
+    // Toggle the dropdown
+    function showDropdown() {
+      
+      
+      if (!isMenuClicked) {
         dropdown.style.display = "block";
-        document.getElementById("right_banner").style.marginLeft="13rem";
+        document.getElementById("right_banner").style.marginLeft="8rem";
         isMenuClicked = true;
         menuIcon.classList.remove("bx-menu");
         menuIcon.classList.add("bx-x");
-    } else {
+      } else {
         dropdown.style.display = "none";
         document.getElementById("right_banner").style.marginLeft="";
         isMenuClicked = false;
         menuIcon.classList.remove("bx-x");
         menuIcon.classList.add("bx-menu");
+      }
     }
-}
-
-
-
-function hideDropdownOnResize() {
-    if (window.innerWidth > 688) {
+    
+    
+    
+    function hideDropdownOnResize() {
+      if (window.innerWidth > 688) {
         dropdown.style.display = "none";
         document.getElementById("right_banner").style.marginLeft="";
-
+        
         menuIcon.classList.remove("bx-x");
         menuIcon.classList.add("bx-menu");
+      }
     }
-}
-
-// Attach event listener
-menuBtn.addEventListener('click', showDropdown);
+    
+    // Attach event listener
+    menuBtn.addEventListener('click', showDropdown);
     window.addEventListener("resize", hideDropdownOnResize);
-</script>
+  </script> -->
 
-<!-- <script src="/Scripts/doctorMenu.js"></script> -->
+<script src="./Scripts/doctor.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+<script src="./Scripts/showMenu.js"></script>
 
 </body>
 </html>

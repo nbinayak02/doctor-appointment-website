@@ -51,7 +51,7 @@
     font-size: 1.8rem;
     display: none;
     position: relative;
-    top: 1rem;
+    top: 0.8rem;
     left: 2rem;
     margin-right: 2rem;
     /* border: 2px solid red; */
@@ -64,17 +64,42 @@
     }
 }
 
-.menu-dropdown {
-    margin-left: 1rem;
+#doc_menu_dropdown {
+    margin-left: 2rem;
     display: none;
     font-size: 1rem;
     font-weight: 600;
     color: #333333;
-    margin-top: 3rem;
+    margin-top: 2.3rem;
     position: absolute;
     z-index: 1;
     width: 37%;
     background-color: #fff;
+}
+
+@media (min-width:642px){
+    #doc_menu_dropdown{
+
+        margin-left: 1rem;
+    }
+}
+
+@media(max-width:690px){
+    #doc_menu_dropdown{
+
+        width: 10rem;
+        border: 2px solid black;
+    }
+
+    #drop_search{
+        width: 10rem;
+        height: 1.4rem;
+    }
+
+    #sch_bx{
+        position: relative;
+    top: -17px;
+    }
 }
 
 .menu-dropdown .menus {
@@ -117,7 +142,7 @@
         grid-template-columns: repeat(2 ,1fr);
     }
 }
-@media (max-width:666px){
+@media (max-width:523px){
 
     #right_banner{
         grid-template-columns: repeat(1 ,1fr);
