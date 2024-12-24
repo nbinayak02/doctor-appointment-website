@@ -109,6 +109,10 @@ nav .menus .menu-item {
     display: block;
     transition: all 0.2s ease-in-out;
 }
+.under_hover a{
+    text-decoration: none;
+    color: #333333;
+}
 
 .under_hover:hover {
     color: #5f6fff;
