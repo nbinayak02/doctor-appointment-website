@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dr Appoint</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Styles/nav-bar.css">
+    <link rel="stylesheet" href="../Styles/admin-index.css">
+    <style>
+        nav .menus {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 3rem;
+        }
+
+        nav {
+            box-shadow: 0px 0px 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="../Assets/Images/DA_Logo_Large.png" alt="Logo">
+        <span id="admin-panel">Admin Panel</span>
+        <div class="menus">
+            <span class="profile"><a href="./login.html">Logout</a></span>
+        </div>
+    </nav>
+
+    <!-- sidepanel -->
+    <section class="sidepanel">
+        <i class='bx bx-collapse-horizontal'></i>
+        <ul>
+            <li><i class='bx bx-task'></i><span class="text">Appointments</span></li>
+            <li><i class='bx bx-calendar-edit'></i><span class="text">Manage</span></li>
+            <li><i class='bx bx-add-to-queue'></i><span class="text">Add Doctors</span></li>
+            <li><i class='bx bx-list-check' ></i><span class="text">Doctor List</span></li>
+        </ul>
+    </section>
+    <script src="../Scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        var isDisplaying = true;
+
+        $(document).ready(function(){
+            $(".bx-collapse-horizontal").click(function(){
+                if(isDisplaying){
+                    //if true then hide on click
+                    $(".text").fadeOut(100);
+                    $(".sidepanel").animate({
+                        width:90
+                    });
+                    isDisplaying = false;
+                } else{
+                    $(".sidepanel").animate({
+                        width:261
+                    });
+                    $(".text").show(1000);
+                    isDisplaying = true;
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
