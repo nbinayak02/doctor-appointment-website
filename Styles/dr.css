@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.booking-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.booking-container .doctor-img {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 0.8rem;
+    background-color: #5f6fff;
+
+}
+
+.booking-container .booking-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 3rem;
+}
+
+.booking-container .booking-info .dr-info {
+    border: 1px solid #949494;
+    border-radius: 0.8rem;
+    padding: 2rem;
+}
+
+.dr-info .doc-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.dr-info .doc-desc {
+    margin-top: 0.3rem;
+}
+
+.doc-desc .qualif {
+    color: #949494;
+    font-weight: 600;
+}
+
+.doc-desc .exp {
+    border: 1px solid #949494;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: #949494;
+}
+
+.dr-info .doc-about {
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.dr-info .doc-about span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.dr-info .doc-about p {
+    margin-top: 0.3rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.dr-info .doc-about .a-fee {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.booking-info .booking-slot {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.booking-info .booking-slot .date-slots,
+.booking-info .booking-slot .time-slots {
+    margin-top: 1.5rem;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.booking-info .booking-slot .date-slots .slot-card {
+    border: 1px solid #949494;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.booking-info .booking-slot .time-slots .slot-card {
+    border: 1px solid #5f6fff;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+
+footer {
+    width: 100%;
+    margin-top: 4rem;
+    height: auto;
+    background-color: #5f6fff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}

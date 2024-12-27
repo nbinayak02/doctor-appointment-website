@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors</title>
-    <link rel="stylesheet" href="./Styles/nav-bar.css"/>
-    <link rel="stylesheet" href="./Styles/style.css"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
-    <link rel="stylesheet" href="./Styles/doctor-card.css"/>
-
-    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
-
-
-
-    <link rel="stylesheet" href="./Styles/doctors.css"/>
-
-
-
-    <!-- Bootstrap font awesome three dot -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors</title>
+  <link rel="stylesheet" href="../Styles/nav-bar.css" />
+  <link rel="stylesheet" href="../Styles/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="../Styles/doctor-card.css" />
+  <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../Styles/doctors.css" />
+  <!-- Bootstrap font awesome three dot -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
+<body>
+<!-- navigation bar -->
   <nav>
-    <img class="logo" src="./Assets/Images/DA_Logo_Large.png" alt="Logo">
+    <img class="logo" src="../Assets/Images/DA_Logo_Large.png" alt="Logo">
     <div class="menus">
       <span class="menu-item under_hover"><a href="./index.html">Home</a></span>
       <span class="menu-item under_hover"><a href="../p/doctor.html">Doctors</a></span>
@@ -40,8 +32,7 @@
       <span id="menu-icon"><i class='bx bx-menu'></i></span>
     </div>
   </nav>
-  <!-- end of navigation bar -->
-
+  
   <div class="menu-dropdown">
     <div class="menus">
       <span class="menu-item under_hover"><a href="../index.html">Home</a></span>
@@ -55,154 +46,152 @@
     </div>
   </div>
 
-    
-<div id="ban">Browse the doctor through specialist</div>
+  <!-- end of navigation bar -->
+  <div class="container">
 
-<div class="container">
-
-  <!-- drop down menu -->
-  <span id="menu-icon"><i class='bx bx-menu'></i></span>
+    <!-- drop down menu -->
+    <span id="menu-icon"><i class='bx bx-menu'></i></span>
 
 
 
-  <div id="doc_menu_dropdown" class="menu-dropdown">
-    <div class="menus">
-      <span class="menu-item under_hover">General Physician</span>
-      <span class="menu-item under_hover">Cardiologist</span>
-      <span class="menu-item under_hover">Neurologist</span>
-      <span class="menu-item under_hover">Dermatologist</span>
-      <span class="menu-item under_hover">Gynecologist</span>
-      <span class="menu-item under_hover">Gastroenterologist</span>
-      <span class="menu-item under_hover">Psychiatrist</span>
-  
-      <span id="drop_search" class="menu-item search-bar">
-        <input type="text" placeholder="Search">
-        <i id="sch_bx" class='bx bx-search'></i>
-      </span>
+    <div id="doc_menu_dropdown" class="menu-dropdown">
+      <div class="menus">
+        <span class="menu-item under_hover">General Physician</span>
+        <span class="menu-item under_hover">Cardiologist</span>
+        <span class="menu-item under_hover">Neurologist</span>
+        <span class="menu-item under_hover">Dermatologist</span>
+        <span class="menu-item under_hover">Gynecologist</span>
+        <span class="menu-item under_hover">Gastroenterologist</span>
+        <span class="menu-item under_hover">Psychiatrist</span>
+
+        <span id="drop_search" class="menu-item search-bar">
+          <input type="text" placeholder="Search">
+          <i id="sch_bx" class='bx bx-search'></i>
+        </span>
+      </div>
+
     </div>
-
-  </div>
 
 
 
 
     <div id="left_banner">
 
-<a  class="doc_catg"><span id="g_p">General Physician</span></a>
-<a  class="doc_catg"><span id="c_d">Cardiologist</span></a>
-<a  class="doc_catg"><span id="n_g">Neurologist</span></a>
-<a  class="doc_catg"><span id="d_g">Dermatologist</span></a>
-<a  class="doc_catg"><span id="g_n">Gynecologist</span></a>
-<a  class="doc_catg"><span id="g_g">Gastroenterologist</span></a>
-<a  class="doc_catg"><span id="p_s">Psychiatrist</span></a>
+      <a class="doc_catg"><span id="g_p">General Physician</span></a>
+      <a class="doc_catg"><span id="c_d">Cardiologist</span></a>
+      <a class="doc_catg"><span id="n_g">Neurologist</span></a>
+      <a class="doc_catg"><span id="d_g">Dermatologist</span></a>
+      <a class="doc_catg"><span id="g_n">Gynecologist</span></a>
+      <a class="doc_catg"><span id="g_g">Gastroenterologist</span></a>
+      <a class="doc_catg"><span id="p_s">Psychiatrist</span></a>
 
     </div>
     <div id="right_banner">
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
-          
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
-        <div class="doc">
-            <div class="doc-img">
-              <img src="./Assets/Images/doctor.png">
-            </div>
-            <div class="doc-info">
-                <div class="doc-qual">MBBS/MD</div>
-              <div class="doc-name">Dr. Gaurav Phuyal</div>
-              <div class="doc-spec">General Physician</div>
-            </div>
-          </div>
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
+
+      <div class="doc">
+        <div class="doc-img">
+          <img src="../Assets/Images/doctor.png">
+        </div>
+        <div class="doc-info">
+          <div class="doc-qual">MBBS/MD</div>
+          <div class="doc-name">Dr. Gaurav Phuyal</div>
+          <div class="doc-spec">General Physician</div>
+        </div>
+      </div>
 
 
 
     </div>
-    
+
   </div>
 
 
@@ -211,10 +200,12 @@
     <div class="footer-container">
       <div class="info">
         <div class="footer-image">
-          <img src="./Assets/Images/DA_Logo_Large_White.png">
+          <img src="../Assets/Images/DA_Logo_Large_White.png">
         </div>
         <div class="footer-desc">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod vero reiciendis doloribus, architecto accusamus rerum hic tempora! Voluptatibus, minus iure autem libero tenetur facere inventore assumenda accusantium eaque, maxime similique!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod vero reiciendis
+            doloribus, architecto accusamus rerum hic tempora! Voluptatibus, minus iure autem libero tenetur facere
+            inventore assumenda accusantium eaque, maxime similique!</p>
         </div>
       </div>
       <div class="links">
@@ -224,7 +215,7 @@
           <li>About</li>
           <li>Contact</li>
           <li>Privacy Policy</li>
-          
+
         </ul>
       </div>
     </div>
@@ -235,59 +226,10 @@
   </footer>
   <!-- end of footer -->
 
-  
-  
-  
-  <!-- <script>
-    
-    // Select elements
-    const menuBtn = document.querySelector(".container #menu-icon");
-    const dropdown = document.querySelector(".container .menu-dropdown");
-    const menuIcon = document.querySelector(".container #menu-icon .bx");
-    let isMenuClicked = false;
-    
-    
-    
-    // Toggle the dropdown
-    function showDropdown() {
-      
-      
-      if (!isMenuClicked) {
-        dropdown.style.display = "block";
-        document.getElementById("right_banner").style.marginLeft="8rem";
-        isMenuClicked = true;
-        menuIcon.classList.remove("bx-menu");
-        menuIcon.classList.add("bx-x");
-      } else {
-        dropdown.style.display = "none";
-        document.getElementById("right_banner").style.marginLeft="";
-        isMenuClicked = false;
-        menuIcon.classList.remove("bx-x");
-        menuIcon.classList.add("bx-menu");
-      }
-    }
-    
-    
-    
-    function hideDropdownOnResize() {
-      if (window.innerWidth > 688) {
-        dropdown.style.display = "none";
-        document.getElementById("right_banner").style.marginLeft="";
-        
-        menuIcon.classList.remove("bx-x");
-        menuIcon.classList.add("bx-menu");
-      }
-    }
-    
-    // Attach event listener
-    menuBtn.addEventListener('click', showDropdown);
-    window.addEventListener("resize", hideDropdownOnResize);
-  </script> -->
-
-<script src="./Scripts/doctor.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-<script src="./Scripts/showMenu.js"></script>
+  <script src="../Scripts/doctor.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="../Scripts/showMenu.js"></script>
 
 </body>
+
 </html>
