@@ -11,7 +11,7 @@ body {
 }
 
 .booking-container {
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,10 +23,16 @@ body {
 
 .booking-container .doctor-img {
     width: 18rem;
-    height: 20rem;
+    height: auto;
     border-radius: 0.8rem;
     background-color: #5f6fff;
 
+}
+
+.booking-container .doctor-img img {
+    position: relative;
+    top: 0.25rem;
+    width: 100%;
 }
 
 .booking-container .booking-info {
@@ -41,7 +47,7 @@ body {
 .booking-container .booking-info .dr-info {
     border: 1px solid #949494;
     border-radius: 0.8rem;
-    padding: 2rem;
+    padding: 1.4rem;
 }
 
 .dr-info .doc-name {
@@ -94,28 +100,93 @@ body {
     font-size: 1.1rem;
 }
 
-.booking-info .booking-slot .date-slots,
-.booking-info .booking-slot .time-slots {
-    margin-top: 1.5rem;
-    width: 800px;
+.appoint_day {
+    margin-top: 1rem;
+    margin-left: 1rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: fit-content;
 
 }
 
-.booking-info .booking-slot .date-slots .slot-card {
-    border: 1px solid #949494;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    text-align: center;
-    border-radius: 0.5rem;
+#ap_time {
+    width: fit-content;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
 }
 
-.booking-info .booking-slot .time-slots .slot-card {
-    border: 1px solid #5f6fff;
-    padding: 0.4rem;
+#ap_time .ap_time_btn {
+
+    font-weight: 500;
+    font-size: 1rem;
+    height: 35px;
+    width: 82px;
+    border-radius: 20px;
+    border: 1px solid #ada7a7;
+    background: transparent;
+    color: #5e5a5a;
+    cursor: pointer;
+
+}
+
+#ap_time .ap_time_btn:hover {
+    background: #5f6fff;
+    color: white;
+}
+
+#ap_time .ap_time_btn:active {
+    background: #5f6fff;
+    color: white;
+}
+
+
+#bok_appoint {
+    margin-top: 3rem;
+}
+
+.ap_btn {
+    background: #f3f8ff;
+    color: #504949;
+    height: 65px;
+    width: 45px;
+    border-radius: 14px;
+    border: 1px solid #787272;
+}
+
+
+.ap_btn:hover {
+
+    background: #5f6fff;
+    color: white;
+    cursor: pointer;
+
+}
+
+.ap_btn:active {
+
+    background: #5f6fff;
+    color: white;
+}
+
+.ap_book {
+    height: 3rem;
+    width: 15rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #5f6fff;
+    color: white;
     border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ap_book:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -131,4 +202,45 @@ footer {
     gap: 3rem;
     font-weight: 600;
     padding-bottom: 2rem;
+}
+@media (max-width:768px){
+    .doc-desc {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .doc-desc .exp {
+        width: fit-content;
+    }
+}
+
+@media (max-width:600px) {
+    .doc-desc {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .booking-container .booking-info {
+        width: 95%;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+@media (max-width:352px) {
+    .booking-container .doctor-img {
+        width: auto;
+        margin-right: 1rem;
+    }
+
+    .booking-info .booking-slot, .booking-container {
+        margin-left: 1rem;
+    }
 }
