@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments</title>
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <link rel="stylesheet" href="Styles/footer.css">
+
+    <link rel="stylesheet" href="Styles/nav-bar.css">
+
+    <link rel="stylesheet" href="appoindetails.css">
+</head>
+<body>
+  <!-- navigation bar -->
+  <nav>
+    <img class="logo" src="./Assets/Images/DA_Logo_Large.png" alt="Logo">
+    <div class="menus">
+      <span class="menu-item under_hover"><a href="./index.html">Home</a></span>
+      <span class="menu-item under_hover"><a href="">Doctors</a></span>
+      <span class="menu-item under_hover"><a href="./p/about.html">About</a></span>
+      <span class="menu-item under_hover"><a href="">Contact</a></span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+      <span class="profile"><a href="./p/login.html">Login</a></span>
+      <span id="menu-icon"><i class='bx bx-menu'></i></span>
+    </div>
+  </nav>
+  <!-- end of navigation bar -->
+
+    <div class="appointment-container">
+        <h2>My Appointments</h2>
+        <div class="appointment-card">
+            <div class="doctor-info">
+                <img src="./Assets/Images/doctor.png" alt="Doctor" class="doctor-image">
+                <div>
+                    <h3>Dr. Richard James</h3>
+                    <p class="specialization">General Physician</p>
+                    <p class="address"><strong>Address:</strong> 24 Main Street, 10 Clause Road</p>
+                    <p class="date-time"><strong>Date & Time:</strong> 5 Oct 2024 | 12:00 PM</p>
+                </div>
+            </div>
+            <div class="appointment-actions">
+                <button class="btn pay-btn"><a href="payment.html">Pay Online</a></button>
+                <button class="btn cancel-btn">Cancel Appointment</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- footer  -->
+  <footer>
+    <div class="footer-container">
+      <div class="info">
+        <div class="footer-image">
+          <img src="./Assets/Images/DA_Logo_Large_White.png">
+        </div>
+        <div class="footer-desc">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod vero reiciendis doloribus, architecto accusamus rerum hic tempora! Voluptatibus, minus iure autem libero tenetur facere inventore assumenda accusantium eaque, maxime similique!</p>
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li>Home</li>
+          <li>Doctors</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Privacy Policy</li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 dr-appoint.com - All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="./Scripts/showMenu.js"></script>
+</body>
+</html>
