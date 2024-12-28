@@ -66,6 +66,12 @@ nav .menus .profile {
     background-color: #5f6fff;
 }
 
+
+    .profile:hover {
+        transform: scale(1.05);
+    }
+
+
 nav .menus #menu-icon {
     font-size: 2rem;
     display: none;
@@ -102,6 +108,10 @@ nav .menus .menu-item {
     cursor: pointer;
     display: block;
     transition: all 0.2s ease-in-out;
+}
+.under_hover a{
+    text-decoration: none;
+    color: #333333;
 }
 
 .under_hover:hover {

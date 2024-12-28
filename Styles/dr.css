@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.booking-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.booking-container .doctor-img {
+    width: 18rem;
+    height: auto;
+    border-radius: 0.8rem;
+    background-color: #5f6fff;
+
+}
+
+.booking-container .doctor-img img {
+    position: relative;
+    top: 0.25rem;
+    width: 100%;
+}
+
+.booking-container .booking-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 3rem;
+}
+
+.booking-container .booking-info .dr-info {
+    border: 1px solid #949494;
+    border-radius: 0.8rem;
+    padding: 1.4rem;
+}
+
+.dr-info .doc-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.dr-info .doc-desc {
+    margin-top: 0.3rem;
+}
+
+.doc-desc .qualif {
+    color: #949494;
+    font-weight: 600;
+}
+
+.doc-desc .exp {
+    border: 1px solid #949494;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: #949494;
+}
+
+.dr-info .doc-about {
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+.dr-info .doc-about span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.dr-info .doc-about p {
+    margin-top: 0.3rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.dr-info .doc-about .a-fee {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.booking-info .booking-slot {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.appoint_day {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: fit-content;
+
+}
+
+#ap_time {
+    width: fit-content;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+
+#ap_time .ap_time_btn {
+
+    font-weight: 500;
+    font-size: 1rem;
+    height: 35px;
+    width: 82px;
+    border-radius: 20px;
+    border: 1px solid #ada7a7;
+    background: transparent;
+    color: #5e5a5a;
+    cursor: pointer;
+
+}
+
+#ap_time .ap_time_btn:hover {
+    background: #5f6fff;
+    color: white;
+}
+
+#ap_time .ap_time_btn:active {
+    background: #5f6fff;
+    color: white;
+}
+
+
+#bok_appoint {
+    margin-top: 3rem;
+}
+
+.ap_btn {
+    background: #f3f8ff;
+    color: #504949;
+    height: 65px;
+    width: 45px;
+    border-radius: 14px;
+    border: 1px solid #787272;
+}
+
+
+.ap_btn:hover {
+
+    background: #5f6fff;
+    color: white;
+    cursor: pointer;
+
+}
+
+.ap_btn:active {
+
+    background: #5f6fff;
+    color: white;
+}
+
+.ap_book {
+    height: 3rem;
+    width: 15rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #5f6fff;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ap_book:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 100%;
+    margin-top: 4rem;
+    height: auto;
+    background-color: #5f6fff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+@media (max-width:768px){
+    .doc-desc {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .doc-desc .exp {
+        width: fit-content;
+    }
+}
+
+@media (max-width:600px) {
+    .doc-desc {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .booking-container .booking-info {
+        width: 95%;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+@media (max-width:352px) {
+    .booking-container .doctor-img {
+        width: auto;
+        margin-right: 1rem;
+    }
+
+    .booking-info .booking-slot, .booking-container {
+        margin-left: 1rem;
+    }
+}
