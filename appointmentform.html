@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointmentform.css">
+    <title>Book an Appointment</title>
+</head>
+<body>
+    <header>
+        <h1>Book Your Appointment</h1>
+    </header>
+    
+    <main>
+        <form id="appointment-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+                <option value="dr_brown">Dr. Brown</option>
+            </select>
+
+            <button type="submit"><a href="appoindetails.html">Book Appointment</a> </button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;  Doctor Appointment Website</p>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="Scripts/showMenu.js"></script>
+</body>
+</html>
