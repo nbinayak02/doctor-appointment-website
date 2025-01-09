@@ -3,9 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../Styles/nav-bar.css" />
+    <link rel="stylesheet" href="../Styles/style.css" />
+<link rel="StyleSheet" href="../Styles/contact.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap font awesome three dot -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="StyleSheet" href="../Styles/footer.css">
+   
 </head>
 <body>
-    <h1>Contact Us</h1>
+
+  <!-- navigation bar -->
+  <nav>
+    <img class="logo" src="../Assets/Images/DA_Logo_Large.png" alt="Logo">
+    <div class="menus">
+      <span class="menu-item under_hover"><a href="../index.html">Home</a></span>
+      <span class="menu-item under_hover"><a href="../p/doctor.html">Doctors</a></span>
+      <span class="menu-item under_hover"><a href="../p/about.html">About</a></span>
+      <span class="menu-item under_hover"><a href="../p/contact.html">Contact</a></span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+      <span class="profile"><a href="../p/login.html">Login</a></span>
+      <span id="menu-icon"><i class='bx bx-menu'></i></span>
+    </div>
+  </nav>
+
+  <div class="menu-dropdown">
+    <div class="menus">
+      <span class="menu-item under_hover"><a href="../index.html">Home</a></span>
+      <span class="menu-item under_hover"><a href="./p/doctor.html">Doctors</a></span>
+      <span class="menu-item under_hover"><a href="./p/about.html">About</a></span>
+      <span class="menu-item under_hover"><a href="./p/contact.html">Contact</a></span>
+      <span class="menu-item search-bar">
+        <input type="text" placeholder="Search">
+        <i class='bx bx-search'></i>
+      </span>
+    </div>
+  </div>
+
+<!-- body  -->
+    <div id="parent">
+        
+        <h1 class="heading"> <span class="head_contact">CONTACT</span> <span class="black_color"> US</span></h1>
+        <div id="container">
+
+
+            <div id="left">
+                <div id="image"><img src="../Assets/Images/contact_image.png" alt="Contact Us Image"></div>
+            </div>
+
+            <div id="right">
+
+
+                <h3 class="office-heading black_color">OUR OFFICE</h3>
+
+                <h4 class="font_style">5407 Willims Station</h4>
+                <h4 class="contact font_style">Suite 350,Washington,USA</h4>
+
+
+                <h4 class="font_style">Tel:<span>(415)555-380</span></h4>
+                <h4 class="contact font_style">Email:<span>dr-appoint@gmail.com</span></h4>
+
+                <h3 class="carrer-heading black_color">CARRERS AT DR-APPOINT</h3>
+                <h4 class="font_style office-heading">Learn more about our teams and job openings.</h4>
+                
+
+                <a href=""><button id="explore" type="button">Explore Jobs</button></a>
+
+
+            </div>
+            
+            
+            
+        </div>
+        
+    </div>
+
+
+
+  <!-- footer  -->
+  <footer>
+    <div class="footer-container">
+      <div class="info">
+        <div class="footer-image">
+          <img src="../Assets/Images/DA_Logo_Large_White.png">
+        </div>
+        <div class="footer-desc">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod vero reiciendis
+            doloribus, architecto accusamus rerum hic tempora! Voluptatibus, minus iure autem libero tenetur facere
+            inventore assumenda accusantium eaque, maxime similique!</p>
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li>Home</li>
+          <li>Doctors</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Privacy Policy</li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2024 dr-appoint.com - All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+
+
+  <script src="../Scripts/showMenu.js"></script>
+
 </body>
 </html>

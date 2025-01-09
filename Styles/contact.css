@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", serif;
+}
+
+#parent{
+/* border: 2px solid red; */
+width: 100vw;
+height: 87vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+
+}
+
+#container{
+
+    /* border: 2px solid greenyellow; */
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+footer{
+    margin-top: -1rem !important;
+}
+
+#left{
+
+    /* border: 2px solid blue; */
+}
+#right{
+    /* border:2px solid orange; */
+}
+
+
+.heading{
+    font-size: 30px;
+    font-weight: 670;
+    margin-top: 12px;
+    margin-bottom: -9px;
+}
+
+.head_contact{
+    color:  #4a4747;;
+    font-weight: 570;
+}
+.office-heading{
+
+    margin-bottom: 2rem;
+}
+
+.carrer-heading{
+    margin-bottom: 1.2rem;
+}
+
+.contact{
+    margin-bottom: 2rem;
+}
+
+#image>img{
+    height: 25rem;
+    width: 26rem;
+}
+
+#explore{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.font_style{
+    font-weight: 560;
+    font-size: 16px;
+    color: #4a4747;
+}
+.black_color{
+    color: #333333;
+}
+
+@media (max-width:657px){
+    #image>img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+}
+
+@media (max-width:547px){
+
+    #image>img {
+        height: 17rem;
+        width: 16rem;
+        /* display: none; */
+    }
+    #container {
+        gap: 1.3rem;
+        width: 85vw;
+        /* margin-left: 2rem; */
+    }
+
+    .heading {
+        margin-left: -65px;
+        /* margin-left: -129px; */
+    }
+
+    #left {
+        margin-left: -60px;
+    
+    }
+
+    #right {
+        height: 24.8rem;
+        /* height: 22.8rem; */
+    }
+
+}
+@media (max-width:547px){
+    #image>img {
+        display: none;
+    }
+    #container {
+        margin-left: 2rem;
+    }
+
+    .heading {
+        margin-left: -129px;
+    }
+    #right {
+        height: 22.8rem;
+    }
+
+}
+
+@media (max-width:348px){
+    .heading {
+        margin-left: 0px;
+    }
+    #left {
+        margin-left: 0px;
+    
+    }
+
+}
